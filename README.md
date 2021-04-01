@@ -1,2 +1,2 @@
 # SOUZA
-Projeto de site pessoal
+Projeto de site pessoal para compartilhamento de reflexões e poemas.
