@@ -12,35 +12,42 @@
 -- Tipografia e Cores
 */
 
-h1 {    
-    color: rgb(204, 171, 121);
-    font-size: 40pt;
+p.titulo {    
+    color: rgb(223, 197, 158);
+    font-size: 30pt;
     font-family: 'Enriqueta';
 }
 
-p.frase {
-    color: rgb(255, 255, 255);
-    font-size: 40pt;
+p.p1frase {
+    color: rgb(98, 176, 221);
+    margin-right: 0px;
+    font-size: 47pt;
     font-family: 'Enriqueta';
-    
+}
+p.p2frase {
+    color: rgb(255, 255, 255);
+    margin-top: -75px;
+    font-size: 47pt;
+    font-family: 'Enriqueta';
 }
 
 p.autor {
-    margin-left: 550px;
+    margin-left: 650px;
     margin-top: -50px;
     color: rgb(255, 255, 255);
     font-family: 'Enriqueta';
-    font-size: 15pt;
+    font-size: 18pt;
     float: left;
     text-align: left;
 }
 
 p.welcome {
-
     color: rgb(255, 255, 255);
-    font-size: 30pt;
+    font-size: 23pt;
     font-family: 'Enriqueta';
     text-align: center;
+    text-transform: uppercase;
+    margin-top: 70px;
 }
 
 /*
@@ -50,10 +57,18 @@ p.welcome {
 img.lado {
     float: left;
     padding: 20px;
+    margin-right: 80px;
 }
 
 img.otolado {
     float: left;
+}
+
+img.simbolo {
+    width: 150px;
+    height: 50px;
+    margin-left: 325px;
+    margin-top: -50px;
 }
 
 body  {  	
@@ -117,16 +132,16 @@ main {
     position: absolute;
     width: 1000px;
     height: 500px;
-    background-color: rgba(0, 0, 0, 0.596);
+    background-color: rgba(0, 0, 0, 0.562);
 }
 
 .bordas {
-    margin: 25px;
-    margin-left: 0px;
-    width: 800px;
+    margin-top: 25px;
+    margin-left: -75px;
+    width: 950px;
     height: 265px;
-    border-top: 1px solid #EDEDED;
-    border-bottom:1px solid #EDEDED;
+    border-top: 1px solid #edededd0;
+    border-bottom:1px solid #edededd0;
 }
 
 /*
