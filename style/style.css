@@ -1,0 +1,146 @@
+/*
+-- Estilos CSS - Website da Empresa
+*/
+
+
+/*
+-- Padrões e Reset
+*/
+
+
+/*
+-- Tipografia e Cores
+*/
+
+h1 {    
+    color: rgb(204, 171, 121);
+    font-size: 40pt;
+    font-family: 'Enriqueta';
+}
+
+p.frase {
+    color: rgb(255, 255, 255);
+    font-size: 40pt;
+    font-family: 'Enriqueta';
+    
+}
+
+p.autor {
+    margin-left: 550px;
+    margin-top: -50px;
+    color: rgb(255, 255, 255);
+    font-family: 'Enriqueta';
+    font-size: 15pt;
+    float: left;
+    text-align: left;
+}
+
+p.welcome {
+
+    color: rgb(255, 255, 255);
+    font-size: 30pt;
+    font-family: 'Enriqueta';
+    text-align: center;
+}
+
+/*
+-- Estrutura
+*/
+
+img.lado {
+    float: left;
+    padding: 20px;
+}
+
+img.otolado {
+    float: left;
+}
+
+body  {  	
+	margin: 0;  	
+	padding: 0;  	
+    background-image: url('background.jpg');  
+	}  
+    
+main {
+    width: 1000px;
+    margin: auto;
+}
+    
+#mainnav ul {
+    padding:0px;
+    margin:0px;
+    list-style:none;
+    font-family: 'Enriqueta';
+}
+    
+#mainnav ul li { display: inline; }
+    
+#mainnav ul li a {
+    padding: 2px 80px;
+    display: inline-block;
+
+    /* visual do link */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-bottom:1px solid #EDEDED;
+    border-top: 1px solid #EDEDED;
+}
+    
+#mainnav ul li a:hover {
+    background-color: rgb(204, 171, 121);
+    color: rgb(255, 255, 255);
+}
+
+#container {  	
+	margin: 1em auto;  	
+	width: 1000px;  	
+	background-color: rgba(255, 255, 255, 0);  
+}   
+
+#header {background: rgba(204, 255, 51, 0);}  
+   
+#contents  {  
+    margin: 1em auto;		
+	width: 800px;  	
+	background: rgba(153, 255, 204, 0);  	
+}
+
+#footer  {  	
+	clear: both;  	
+	background: rgba(255, 255, 153, 0);  
+}  
+
+.quadro {
+    margin: 30px;
+    margin-left: 0px;
+    position: absolute;
+    width: 1000px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.596);
+}
+
+.bordas {
+    margin: 25px;
+    margin-left: 0px;
+    width: 800px;
+    height: 265px;
+    border-top: 1px solid #EDEDED;
+    border-bottom:1px solid #EDEDED;
+}
+
+/*
+-- Estilos específicos de Seção
+*/
+
+/*
+-- Formulários
+*/
+
+/*
+-- Tabelas
+*/
+
+/*
+-- Classes de Uso Geral
+*/
