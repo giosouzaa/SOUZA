@@ -56,8 +56,8 @@ p.footer {
     font-size: 11pt;
     font-family: 'Enriqueta';
     position: absolute;
-    margin-top: 15px;
-    margin-left: 50px;
+    margin-top: 18px;
+    margin-left: 250px;
 }
 
 /*
@@ -79,6 +79,22 @@ img.simbolo {
     height: 50px;
     margin-left: 160px;
     margin-top: -50px;
+}
+
+img.facebook {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 13px;
+}
+
+img.instagram {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-left: 190px;
+    margin-top: 13px;
 }
 
 body  {  	
@@ -150,7 +166,7 @@ main {
     margin-left: -140px;
     position: absolute;
     width: 1280px;
-    height: 50px;
+    height: 60px;
     background-color: rgba(0, 0, 0, 0.349);
 }
 
