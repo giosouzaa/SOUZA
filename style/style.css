@@ -274,14 +274,14 @@ p.footer {
     font-family: 'Enriqueta',serif;
     position: absolute;
     margin-top: 18px;
-    margin-left: 250px;
+    margin-left: 100px;
 }
 
 img.facebook {
     width: 20px;
     height: 20px;
     position: absolute;
-    margin-left: 150px;
+    margin-left: 20px;
     margin-top: 13px;
 }
 
@@ -289,7 +289,7 @@ img.instagram {
     width: 20px;
     height: 20px;
     position: absolute;
-    margin-left: 190px;
+    margin-left: 50px;
     margin-top: 13px;
 }  
 .quadrofooter {
