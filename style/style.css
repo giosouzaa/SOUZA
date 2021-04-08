@@ -4,12 +4,12 @@
 
 @charset "UTF-8";
 
-body  {  	
+body {  	
 	margin: 0;  	
 	padding: 0;  	
     background-image: url('background.jpg');
     background-attachment: fixed;  
-	}  
+}  
     
 main {
     width: 1000px;
@@ -17,7 +17,6 @@ main {
 }
 
 .quadro {
-    margin-top: 0px;
     width: 100%;
     height: 500px;
     background-color: rgba(0, 0, 0, 0.562);
@@ -40,7 +39,12 @@ img.bird {
 p.titulo {    
     color: rgb(223, 197, 158);
     font-size: 30pt;
-    font-family: 'Enriqueta';
+    font-family: 'Enriqueta',serif;
+}
+
+p.titulo a{
+    text-decoration: none;
+    color: rgb(223, 197, 158);
 }
 
 .hr1 {
@@ -80,7 +84,67 @@ p.titulo {
     padding:0px;
     margin:0px;
     list-style:none;
-    font-family: 'Enriqueta';
+    font-family: 'Enriqueta',serif;
+}
+
+/*
+-- Sidebar
+*/
+
+div.sidebar {
+    margin-top: 30px;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.829); 
+}
+
+body .sidebar ul li {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+body .sidebar ul li a {
+    padding: 0px 56px;
+
+    /* visual do link */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+body .sidebar ul li a:hover {
+    color: #ccab79;
+}
+
+body .sidebar ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    font-family: 'Enriqueta', serif;
+}
+
+body .sidebar ul li input[type=text]{
+    border-radius: 4px;
+    background-color: #4d4d4d5b;
+    margin-top: 5px;
+    margin-right: 3px;
+    padding: 2px;
+    color: white;
+}
+
+#btnbusca {
+    width: 22px;
+    height: 22px;
+    background-color: #000000a1;
+    border-radius: 4px;
+}
+
+#btnbusca:hover {
+    background-color: #ccab79;
+}
+
+img.search {
+    width: 10px;
+    height: 10px;
 }
 
 /*
@@ -90,87 +154,107 @@ p.titulo {
 #contents  {  
     margin: 1em auto;		
 	width: 800px;  	
-	background: rgba(153, 255, 204, 0);  	
+	background: rgba(153, 255, 204,     0);  	
 }
 
-img.drummond {
-    float: left;
-    padding: 20px;
-    margin-right: 80px;
-}
+        /*Início*/
 
-p.p1frase {
-    color: rgb(98, 176, 221);
-    margin-right: 0px;
-    font-size: 47pt;
-    font-family: 'Enriqueta';
-}
-
-p.p2frase {
-    color: rgb(255, 255, 255);
-    margin-top: -75px;
-    font-size: 47pt;
-    font-family: 'Enriqueta';
-}
-
-p.autor {
-    margin-left: 650px;
-    margin-top: -50px;
-    color: rgb(255, 255, 255);
-    font-family: 'Enriqueta';
-    font-size: 18pt;
-    float: left;
-    text-align: left;
-}
-
-.bordas {
-    position: absolute;
-    margin-top:25px;
-    margin-left: -75px;
-    width: 950px;
-    height: 265px;
-    border-top: 1px solid #edededd0;
-    border-bottom:1px solid #edededd0;
-}
-
-p.welcome {
-    color: rgb(255, 255, 255);
-    font-size: 23pt;
-    font-family: 'Enriqueta';
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 70px;
-}
-
-div.welcome {
-    position: absolute;
-    margin-top: 300px;
-    margin-left: 162.5px;
-}
-
-img.simbolo {
-    width: 150px;
-    height: 50px;
-    margin-left: 160px;
-    margin-top: -50px;
-}
-
-    /*Pensamentos transcritos*/
-
-    div.posts {
-        width: 80%;
-        float
+    img.drummond {
+        float: left;
+        padding: 20px;
+        margin-right: 80px;
     }
 
-/*
--- Sidebar
-*/
+    p.p1frase {
+        color: rgb(98, 176, 221);
+        margin-right: 0px;
+        font-size: 47pt;
+        font-family: 'Enriqueta',serif;
+    }
 
-#sidebar {
-    float: right;	
-	width: 20%;  	
-	background: #6F9;
-}
+    p.p2frase {
+        color: rgb(255, 255, 255);
+        margin-top: -75px;
+        font-size: 47pt;
+        font-family: 'Enriqueta',serif;
+    }
+
+    p.autor {
+        margin-left: 650px;
+        margin-top: -50px;
+        color: rgb(255, 255, 255);
+        font-family: 'Enriqueta',serif;
+        font-size: 18pt;
+        float: left;
+        text-align: left;
+    }
+
+    .bordas {
+        position: absolute;
+        margin-top:25px;
+        margin-left: -75px;
+        width: 950px;
+        height: 265px;
+        border-top: 1px solid #edededd0;
+        border-bottom:1px solid     #edededd0;
+    }
+
+    p.welcome {
+        color: rgb(255, 255, 255);
+        font-size: 23pt;
+        font-family: 'Enriqueta',serif;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 70px;
+    }
+
+    div.welcome {
+        position: absolute;
+        margin-top: 300px;
+        margin-left: 162.5px;
+    }
+
+    img.simbolo {
+        width: 150px;
+        height: 50px;
+        margin-left: 160px;
+        margin-top: -50px;
+    }
+
+        /*Pensamentos transcritos*/
+
+        section.posts {
+        width: 65%;
+        text-align: justify;
+        }
+
+        .article-box {
+            width: 100%;
+            padding: 3% 10%;
+        }
+
+        h4.articletitle a {
+            text-decoration: none;
+            font-family: 'Enriqueta',serif;
+            font-size: 13pt;
+            color: white;
+        }
+
+        h4.articletitle: {
+            font-family: 'Enriqueta',serif;
+            font-size: 13pt;
+            color: white;
+        }
+
+        p.article-date {
+            font-family: 'Enriqueta',serif;
+            color: white;
+        }
+
+        p.article-resume {
+            font-family: 'Enriqueta',serif;
+            color: white;
+        }
 
 /*
 -- Footer
@@ -179,7 +263,7 @@ img.simbolo {
 #footer  {  	
 	clear: both; 	
 	background: rgba(0, 0, 0, 0);
-    font: 'Enriqueta';
+    font: 'Enriqueta',serif;
     color: white;
 }  
 
@@ -187,7 +271,7 @@ p.footer {
     color: #ffffffd0;
     text-align: left;
     font-size: 11pt;
-    font-family: 'Enriqueta';
+    font-family: 'Enriqueta',serif;
     position: absolute;
     margin-top: 18px;
     margin-left: 250px;
