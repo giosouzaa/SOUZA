@@ -286,9 +286,10 @@ img.search {
         margin-top: -15px;
     }
 
-    p.comments_number {
+    p.comments_number a {
         font-family: 'Enriqueta',serif;
         color: white;
+        text-decoration: none;
     }
 /*
 -- Footer
