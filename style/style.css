@@ -8,9 +8,9 @@ body {
 	margin: 0;  	
 	padding: 0;  	
     background-image: url('background.jpg');
-    background-attachment: fixed;  
+    background-attachment: fixed;
 }  
-    
+
 main {
     width: 1000px;
     margin: auto;
@@ -19,6 +19,12 @@ main {
 .quadro {
     width: 100%;
     height: 500px;
+    background-color: rgba(0, 0, 0, 0.562);
+}
+
+.quadroposts {
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.562);
 }
 
@@ -223,39 +229,67 @@ img.search {
 
         /*Pensamentos transcritos*/
 
-        section.posts {
-        width: 65%;
-        text-align: justify;
-        }
+    section.posts {
+    width: 900px;
+    text-align: justify;
+    
+    }
 
-        .article-box {
-            width: 100%;
-            padding: 3% 10%;
-        }
+    .article-box {
+        width: 800px;
+        background-color: rgba(0, 0, 0, 0.568);
+        border: 1px solid rgba(255, 255, 255, 0.493);
+        margin-left: 20px;
+        margin-right: 25px;
+        margin-bottom: 25px;
+        padding: 80px;
+    }
 
-        h4.articletitle a {
-            text-decoration: none;
-            font-family: 'Enriqueta',serif;
-            font-size: 13pt;
-            color: white;
-        }
+    h4.articletitle a {
+        text-decoration: none;
+        font-family: 'Enriqueta',serif;
+        font-size: 13pt;
+        color: white;
+    }
 
-        h4.articletitle: {
-            font-family: 'Enriqueta',serif;
-            font-size: 13pt;
-            color: white;
-        }
+    img.giovanna {
+        width: 40px;
+        height: 40px;
+        border-radius: 30px;
+    }
 
-        p.article-date {
-            font-family: 'Enriqueta',serif;
-            color: white;
-        }
+    p.article-date1 {
+        font-family: 'Enriqueta',serif;
+        color: white;
+        margin-left: 50px;
+        margin-top: -40px;
+    }
 
-        p.article-resume {
-            font-family: 'Enriqueta',serif;
-            color: white;
-        }
+    p.article-date2 {
+        font-family: 'Enriqueta',serif;
+        color: rgba(255, 255, 255, 0.644);
+        font-size: 11pt;
+        margin-left: 50px;
+        margin-top: -15px;
+    }
 
+    h4.articletitle a {
+        font-family: 'Enriqueta',serif;
+        font-size: 20pt;
+        margin-top: 10px;
+        color: white;
+    }
+
+    p.article-resume {
+        font-family: 'Enriqueta',serif;
+        color: white;
+        margin-top: -15px;
+    }
+
+    p.comments_number {
+        font-family: 'Enriqueta',serif;
+        color: white;
+    }
 /*
 -- Footer
 */
