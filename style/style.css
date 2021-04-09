@@ -245,24 +245,20 @@ img.search {
         padding: 80px;
     }
 
-    h4.articletitle a {
-        text-decoration: none;
-        font-family: 'Enriqueta',serif;
-        font-size: 13pt;
-        color: white;
-    }
-
     img.giovanna {
         width: 40px;
         height: 40px;
         border-radius: 30px;
+        position: absolute;
+        margin-left: -50px;
+        margin-top: -5px;
     }
 
-    p.article-date1 {
+    p.article-date1 a {
         font-family: 'Enriqueta',serif;
         color: white;
         margin-left: 50px;
-        margin-top: -40px;
+        text-decoration: none;
     }
 
     p.article-date2 {
@@ -278,12 +274,18 @@ img.search {
         font-size: 20pt;
         margin-top: 10px;
         color: white;
+        text-decoration: none;
     }
 
     p.article-resume {
         font-family: 'Enriqueta',serif;
         color: white;
         margin-top: -15px;
+    }
+
+    .line_comments {
+        border: 0;
+        border-top: 1px solid #ffffff63;
     }
 
     p.comments_number a {
