@@ -339,33 +339,36 @@ img.search {
 
         /* Eu */
 
+    .bordaseu {
+        position: absolute;
+        margin-top:25px;
+        margin-left: -75px;
+        width: 950px;
+        height: 450px;
+        border-top: 1px solid #edededd0;
+        border-bottom:1px solid     #edededd0;
+    }
+
     p.apresentation_title {
         font-size: 48px;
         width: 100%;
         color: rgb(98, 176, 221);
-        margin-left: -40px;
-        padding-top: 100px;
+        margin-left: 40px;
+        padding-top: 70px;
     }
 
     p.apresentation {
         font-size: 18px;
         width: 500px;
-        margin-left: -40px;
+        margin-left: 40px;
         padding-top: 10px;
         text-align: justify;
         color: white;
     }
 
-    img.simboloeu { 
-        width: 100px; 
-        height: 40px; 
-        margin-top: 60px;
-        margin-left: 330px; 
-    }
-
     img.giovanna_perfil {
         float: right;
-        margin-right: -40px;
+        margin-right: 40px;
         margin-top: -210px;
         border-radius: 40px;
     }
@@ -379,7 +382,7 @@ img.search {
         overflow: visible; 
         background-image: linear-gradient(to right, transparent, rgb(109, 109, 109), transparent);
         margin-top: 40px;
-        margin-left: 535px;
+        margin-left: 610px;
     }
 
 /*
