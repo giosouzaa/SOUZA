@@ -7,53 +7,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="style/bird.ico" type="image/x-icon">
     <title>Eu | souza</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/eu.css">
 </head>
 
 <body>
     <main>
-            </div<div id="container">
+        <div class="container">
+            <header>
+                <img class="bird" src="style/bird.png" alt="bird">
+                        <p class="titulo"><a href="index.html">SOUZA</a></p>
+                        <hr class="hr1">
+    
+                        <div class="menu_section">
+                            <input type="checkbox" id="checkbox_menu">
+                            <div class="menu_toogle"><label for="checkbox_menu">        <span></span>
+                                <span></span>
+                                <span></span>
+                            </label>
+                            </div>
+                            <div class="menu">
+                                <nav class="navmenu"> 
+                                    <ul>
+                                        <li><a href="index.html">INÍCIO</a></li>
+                                        <li><a href="pensamentos.html">PENSAMENTOS TRANSCRITOS</a></li>
+                                        <li><a href="voce.html">VOCÊ</a></li>
+                                        <li><a href="eu.html">EU</a></li>
+                            
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+    
+                        <div id="mainnav">
+                            <nav>
+                                <ul>
+                                    <li><a href="index.html">INÍCIO</a></li>
+                                    <li><a href="pensamentos.html">PENSAMENTOS TRANSCRITOS</a></li>
+                                    <li><a href="voce.html">VOCÊ</a></li>
+                                    <li><a href="eu.html">EU</a></li>
+                        
+                                </ul>
+                            </nav>
+                        </div>
+            </header>
 
-                <!--*******************header*******************-->
-            <div id="header">
-                <header>
-                    <img class="bird" src="style/bird.png" alt="bird">
-                    <p class="titulo"><a href="index.html">SOUZA</a></p>
-                    <hr class="hr1">
-                </header>
-            </div>
-            <div id="mainnav">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">INÍCIO</a></li>
-                        <li><a href="pensamentos.html">PENSAMENTOS TRANSCRITOS</a></li>
-                        <li><a href="voce.html">VOCÊ</a></li>
-                        <li><a href="eu.html">EU</a></li>
-            
-                    </ul>
-                </nav>
-            </div>
-            <div class="quadro">
-
-                <!--*******************contents*******************-->
-            <div id="contents">
-
-
-                <div class="bordaseu">
-                    <p class="apresentation_title">Algumas linhas sobre mim</p>
+            <!--*******************contents*******************-->
+            <texto>
+                <div class="bordastexto">
+                    <p class="apresentation_title">
+                        Algumas linhas sobre mim
+                    </p>
                     <p class="apresentation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure odio vitae dolorem possimus modi esse quasi illum. Accusantium earum, incidunt voluptas corporis aliquam explicabo, quasi veritatis id officia eaque repudiandae.</p>
-                    <img class="giovanna_perfil" src="style/giovanna_perfil.jpeg" alt="">
-                    <hr class="picture_line">
                 </div>
-            </div>
-            </div>
+            </texto>
+            <foto> 
+                <div class="bordasimagem">
+                    <picture>
+                        <source media="(max-width:658px)" srcset="style/giovanna_perfilP.jpeg" type="image/jpeg">
 
-                <!--*******************footer*******************-->
-                <div id="footer">
-                    <a href="https://www.facebook.com/gii.pp/"><img class="facebook" src="style/facebook.png" alt="Facebook"></a>
-                    <a href="https://www.instagram.com/sgio_m/"><img class="instagram" src="style/instagram.png" alt="Instagram"></a>
-                    <p class="footer">&copy; 2021 por Giovanna Souza.</p>
-                </div>
+                        <source  media="(max-width: 942px)" srcset="style/giovanna_perfilM.jpeg" type="image/jpeg">
+
+                        <img class="giovanna_perfil" src="style/giovanna_perfil.jpeg" alt="Giovanna">
+                    </picture>
+        
+                <hr class="picture_line"></div>
+            </foto>
+
+            <!--*******************footer*******************-->
+            <footer>
+                <a href="https://www.facebook.com/gii.pp/"><img class="facebook" src="style/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/sgio_m/"><img class="instagram" src="style/instagram.png" alt="Instagram"></a>
+                <p class="footer">&copy; 2021 por Giovanna Souza.</p>
+            </footer>
         </div>
     </main>
 </body>
