@@ -576,9 +576,20 @@ section.posts {
         top:20px;
     }
 
-    /*#checkbox_menu:checked + body, html {
+/*
+    #checkbox_menu:checked + body, html {
         overflow: hidden;
-    }*/
+    }
+    #checkbox_menu_a:checked + body, html {
+        overflow: hidden;
+    }
+    #checkbox_menu:disabled + body, html {
+        overflow: visible;
+    }
+    #checkbox_menu_a:disabled + body, html {
+        overflow: visible;
+    }
+*/
 
     #checkbox_menu:checked + .menu_toogle label span:nth-child(1) {
         opacity: 0;
