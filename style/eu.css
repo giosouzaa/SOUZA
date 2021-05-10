@@ -23,9 +23,10 @@ html, body {
 */
 
 header {
-    background: rgba(75, 104, 156, 0);
     height: 25vh;
     grid-area: header;  
+    
+    background: rgba(75, 104, 156, 0);
 }
 
 img.bird {
@@ -49,6 +50,7 @@ p.titulo a{
     float: left;
     margin-top: -30px;
     position: absolute;
+
     border: 0;
     border-top: 1px solid #ffffff93;
 }
@@ -74,6 +76,7 @@ p.titulo a{
 #mainnav ul {
     margin: 0;
     padding: 0;
+
     list-style:none;
     font-family: 'Enriqueta',serif;
 }
@@ -103,37 +106,41 @@ nav.navmenu ul li a:hover {
 nav.navmenu ul {
     padding:0px;
     margin:0px;
+
     list-style:none;
     font-family: 'Enriqueta',serif;
 }
-
 
 /*
 Contents
 */
 
 foto {
-    background: rgba(0, 0, 0, 0.562);
     height: 60vh;
-    grid-area: foto;
     margin-top: 15px;
+    grid-area: foto;
+
+    background: rgba(0, 0, 0, 0.562);
 }
 
 texto {
-    background: rgba(0, 0, 0, 0.562);
     height: 60vh;
-    grid-area: texto;
     margin-top: 15px;
+
+    grid-area: texto;
+    
+    background: rgba(0, 0, 0, 0.562);
 }
 
 .bordasimagem {
     margin-top:25px;
     width: 89%;
+    max-width: 300px;
     height: 51.5vh;
     float: left;
+
     border-top: 1px solid #edededd0;
     border-bottom:1px solid     #edededd0;
-    max-width: 300px;
 }
 
 .bordastexto {
@@ -141,21 +148,24 @@ texto {
     width: 96%;
     height: 51.5vh;
     float: right;
+
     border-top: 1px solid #edededd0;
     border-bottom:1px solid     #edededd0;
 }
 
 p.apresentation_title {
     padding-top: 8vh;
+    padding-left: 2vw;
+
     font-size: 2em;
     color: rgb(98, 176, 221);
-    padding-left: 2vw;
 }
 
 p.apresentation {
-    font-size: 1em;
     padding-right: 7vw;
     padding-left: 2vw;
+
+    font-size: 1em;
     text-align: justify;
     color: white;
 }
@@ -163,20 +173,22 @@ p.apresentation {
 img.giovanna_perfil {
     float: right;
     margin-top: 7vh;
-    border-radius: 20px;
     margin-right: 2vw;
+
+    border-radius: 20px;
 }
 
 .picture_line {
+    width: 300px;
+    height: 2px;
+    overflow: visible;
+    margin-top: 43vh;
+    margin-left: -4.5vw;
+
     border: 0;
     border-top: medium rgb(94, 94, 94);
     text-align: center;
-    width: 300px;
-    height: 2px;
-    overflow: visible; 
     background-image: linear-gradient(to right, transparent, rgb(109, 109, 109), transparent);
-    margin-top: 43vh;
-    margin-left: -4.5vw;
 }
 
 /*
@@ -184,21 +196,23 @@ Footer
 */
 
 footer {
-    background: rgba(0, 0, 0, 0.349);
     margin-top: 60px;
     height: 10vh;
     grid-area: footer;
+
     align-self: flex-end;
+    background: rgba(0, 0, 0, 0.349);
 }
 
 p.footer {
+    position: absolute;
+    margin-top: 2em;
+    margin-left: 6em;
+
     color: #ffffffd0;
     text-align: left;
     font-size: 14.7px;
     font-family: 'Enriqueta',serif;
-    position: absolute;
-    margin-top: 2em;
-    margin-left: 6em;
 }
 
 img.facebook {
@@ -289,27 +303,28 @@ img.instagram {
 }
 
 @media (max-width:774px) {
-    header #mainnav ul li a {
-        padding: 0px 2vw;
-    }
     img.giovanna_perfil {
         margin-left: 29vh;
         grid-area: foto;
     }
 }
 
-@media (max-width: 658px) {
-    /*Menu*/
+@media (max-width:767px) {
+
+    /*Menu Principal*/
     
     #mainnav nav {
         display: none;
     }
 
     .menu_toogle {
+        position: absolute;
         height: 80px;
         width: 40px;
         margin-top: 120px;
         margin-right: 15vw;
+        top: 15px;
+        right: 0;
     }
 
     #checkbox_menu {
@@ -340,19 +355,17 @@ img.instagram {
         top:20px;
     }
 
-    /*#checkbox_menu:checked + body, html {
-        overflow: hidden;
-    }*/
-
-    #checkbox_menu:checked + .menu_toogle label span:nth-child(1) {
-        opacity: 0;
-    }
-
     #checkbox_menu:checked + .menu_toogle {
         height: 80px;
         width: 40px;
         margin-top: 3vh;
         margin-right: 3vw;
+        position: fixed;
+        z-index: 10;
+    }
+
+    #checkbox_menu:checked + .menu_toogle label span:nth-child(1) {
+        opacity: 0;
     }
 
     #checkbox_menu:checked + .menu_toogle label span:nth-child(2) {
@@ -368,39 +381,20 @@ img.instagram {
         padding-top: 16.6vh;
         position: absolute;
         top:0;
-        left: -700px;
+        left: -767px;
         width: 100vw;
         height: 100vh;
         background-color: #000000c7;
         transition: 0.25s ease-in-out;
+        z-index: 9;
     }
 
     #checkbox_menu:checked ~ .menu nav.navmenu {
-        transform: translateX(700px);
-    }
-
-    .menu_section nav.navmenu {
+        transform: translateX(767px);
+        position: fixed;
         display:block;
     }
 
-    .menu_section .menu_toogle {
-        position: absolute;
-        right: 0;
-        top: 15px;
-    }
-
-    #checkbox_menu:checked + .menu_section .menu_toogle .one{ 
-        opacity: 0;
-    }
-
-    .menu_section .menu_toogle .two {
-        transform: rotate(-45deg);
-    }
-
-    .menu_section .menu_toogle .three {
-        transform: rotate(45deg);
-        margin-top: -10px;
-    }
 }
 
 @media (max-width:607px) {
@@ -424,7 +418,7 @@ img.instagram {
         grid-area: foto;
     }
     p.footer {
-        margin-top: 5.5vh;
+        margin-top: 5vh;
         font-size: 12px;
     }
 }

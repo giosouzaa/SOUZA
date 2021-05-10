@@ -17,6 +17,7 @@
             <p class="titulo"><a href="index.html">SOUZA</a></p>
             <hr class="hr1">
 
+        <!-- Menu Toogle -->
             <div class="menu_section">
                 <input type="checkbox" id="checkbox_menu">
                 <div class="menu_toogle"><label for="checkbox_menu">        <span></span>
@@ -37,22 +38,22 @@
                 </div>
             </div>
 
+        <!-- Menu toogle dos posts -->
             <div class="menu_aside">
-                <input type="checkbox" id="checkbox_aside"><label for="checkbox_aside">
-                    <span class="checkbox_aside">Todos os posts +</span>
-                </label>
+                <input type="checkbox" id="checkbox_aside">
+                <div class="menu_opened">
+                    <label for="checkbox_aside" class="Todos os posts">Todos os posts</label>
+                    <nav class="aside_opened">
+                        <ul>
+                            <li><a href="">Todos os posts</a></li>
+                            <li><a href="">Pensamentos transcritos</a></li>
+                            <li><a href="">Reflexões transcritas</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
 
-            <div class="menu_opened">
-                <nav class="aside_opened">
-                    <ul>
-                        <li><a href="">Todos os posts</a></li>
-                        <li><a href="">Pensamentos transcritos</a></li>
-                        <li><a href="">Reflexões transcritas</a></li>
-                    </ul>
-                </nav>
-            </div>
-
+        <!-- Menu Principal -->
             <div id="mainnav">
                 <nav>
                     <ul>
@@ -65,6 +66,8 @@
                 </nav>
             </div>
         </header>
+
+    <!-- Menu dos posts -->
         <aside>
             <ul>
                 <li><a href="#">Todos os posts</a></li>
@@ -73,6 +76,8 @@
                 <li><input type="text" placeholder="Buscar..." /><button id="btnbusca"><img class="search" src="style/search.png"  alt="Buscar"/></button></li>
             </ul>
         </aside>
+
+    <!-- Área de posts -->
         <posts>
             <br/>
             <div class="article-box">
@@ -130,6 +135,8 @@
             </div>
             <br/>
         </posts>
+
+    <!-- Footer --> 
         <footer>
             <a href="https://www.facebook.com/gii.pp/"><img class="facebook" src="style/facebook.png" alt="Facebook"></a>
             <a href="https://www.instagram.com/sgio_m/"><img class="instagram" src="style/instagram.png" alt="Instagram"></a>

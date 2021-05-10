@@ -15,14 +15,16 @@ body {
     width: 70vw;
     margin-left: 15vw;
 }
+
 /*
 -- Header
 */
 
 header {
-    background: rgba(75, 104, 156, 0);
     height: 25vh;
     grid-area: header;
+    
+    background: rgba(75, 104, 156, 0);
 }
 
 img.bird {
@@ -46,6 +48,7 @@ p.titulo a {
     float: left;
     margin-top: -30px;
     position: absolute;
+
     border: 0;
     border-top: 1px solid #ffffff93;
 }
@@ -57,6 +60,7 @@ p.titulo a {
 #mainnav ul li a {
     padding: 0px 5vw;
     display: inline-block;
+
     /* visual do link */
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -72,6 +76,7 @@ p.titulo a {
 #mainnav ul {
     margin: 0;
     padding: 0;
+
     list-style: none;
     font-family: 'Enriqueta', serif;
 }
@@ -85,6 +90,7 @@ nav.navmenu ul li a {
     display: block;
     text-align: center;
     line-height: 16.6vh;
+
     /* visual do link */
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -100,6 +106,7 @@ nav.navmenu ul li a:hover {
 nav.navmenu ul {
     padding: 0px;
     margin: 0px;
+
     list-style: none;
     font-family: 'Enriqueta', serif;
 }
@@ -108,8 +115,9 @@ aside {
     margin-top: 0px;
     width: 100%;
     height: 10vh;
-    background-color: rgb(0, 0, 0);
     grid-area: aside;
+
+    background-color: rgb(0, 0, 0);
 }
 
 aside ul li {
@@ -119,6 +127,7 @@ aside ul li {
 
 aside ul li a {
     padding: 0px 1vw;
+
     /* visual do link */
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -132,6 +141,7 @@ aside ul li a:hover {
 aside ul {
     padding: 0px;
     margin: 0px;
+
     list-style: none;
     font-family: 'Enriqueta', serif;
 }
@@ -142,15 +152,17 @@ aside ul li input[type=text] {
     margin-top: 5px;
     margin-right: 3px;
     padding: 2px;
-    color: white;
-    size: 1.6vw;
     width: 14vw;
     height: 1.7vw;
+
+    color: white;
+    size: 1.6vw; 
 }
 
 #btnbusca {
     width: 2.5;
     height: 2.5vw;
+
     background-color: #000000a1;
     border-radius: 0.5vw;
     cursor: pointer;
@@ -166,21 +178,22 @@ img.search {
 }
 
 footer {
-    background: rgba(0, 0, 0, 0.349);
     margin-top: 60px;
     height: 10vh;
     grid-area: footer;
+    
+    background: rgba(0, 0, 0, 0.349);
     align-self: flex-end;
 }
 
-p.footer {
+p.footer {position: absolute;
+    margin-top: 2em;
+    margin-left: 6em;
+
     color: #ffffffd0;
     text-align: left;
     font-size: 14.7px;
     font-family: 'Enriqueta', serif;
-    position: absolute;
-    margin-top: 2em;
-    margin-left: 6em;
 }
 
 img.facebook {
@@ -200,24 +213,27 @@ img.instagram {
 }
 
 aside {
-    background: rgba(0, 0, 0, 0.562);
     height: 8vh;
-    grid-area: aside;
     margin-top: 15px;
+    grid-area: aside;
+
+    background: rgba(0, 0, 0, 0.562); 
 }
 
 posts {
-    background: rgba(0, 0, 0, 0.562);
     height: auto;
-    grid-area: posts;
     margin-top: 15px;
+    grid-area: posts;
+    
+    background: rgba(0, 0, 0, 0.562);
 }
 
 .article-box {
-    background-color: rgba(0, 0, 0, 0.568);
-    border: 1px solid rgba(255, 255, 255, 0.493);
     padding: 5vh;
     margin: 2vw;
+
+    background-color: rgba(0, 0, 0, 0.568);
+    border: 1px solid rgba(255, 255, 255, 0.493);
 }
 
 img.giovanna {
@@ -230,8 +246,9 @@ img.giovanna {
 }
 
 p.article-date1 a {
-    color: white;
     margin-left: 50px;
+
+    color: white;
     text-decoration: none;
 }
 
@@ -240,17 +257,20 @@ p.article-date1 a:hover {
 }
 
 p.article-date2 {
-    color: rgba(255, 255, 255, 0.644);
-    font-size: 14.7px;
     margin-left: 50px;
     margin-top: -15px;
+
+    color: rgba(255, 255, 255, 0.644);
+    font-size: 14.7px;
+    
 }
 
 h4.articletitle a {
-    font-size: 1.4em;
     margin-top: 10px;
+
     color: white;
     text-decoration: none;
+    font-size: 1.4em;
 }
 
 h4.articletitle a:hover {
@@ -258,14 +278,16 @@ h4.articletitle a:hover {
 }
 
 p.article-resume {
-    color: white;
     margin-top: -15px;
+
+    color: white;
 }
 
 .line_comments {
+    width: 100%;
+
     border: 0;
     border-top: 1px solid #ffffff63;
-    width: 100%;
 }
 
 p.comments_number a {
@@ -311,14 +333,18 @@ p.comments_number a:hover {
 
 @media (min-width:1366px) {
     #checkbox_menu,
-    nav.navmenu {
+    nav.navmenu,
+    nav.aside_opened,
+    .menu_aside {
         display: none;
     }
 }
 
 @media (max-width:1366px) {
     #checkbox_menu,
-    nav.navmenu {
+    nav.navmenu,
+    nav.aside_opened,
+    .menu_aside {
         display: none;
     }
 }
@@ -336,17 +362,21 @@ p.comments_number a:hover {
 }
 
 @media (max-width:767px) {
-    /*Menu*/
+
+    /*Menu Principal*/
 
     #mainnav nav {
         display: none;
     }
 
     .menu_toogle {
+        position: absolute;
         height: 80px;
         width: 40px;
-        margin-top: 40px;
+        margin-top: 120px;
         margin-right: 15vw;
+        top: 15px;
+        right: 0;
     }
 
     #checkbox_menu {
@@ -377,30 +407,17 @@ p.comments_number a:hover {
         top:20px;
     }
 
-/*
-    #checkbox_menu:checked + body, html {
-        overflow: hidden;
-    }
-    #checkbox_menu_a:checked + body, html {
-        overflow: hidden;
-    }
-    #checkbox_menu:disabled + body, html {
-        overflow: visible;
-    }
-    #checkbox_menu_a:disabled + body, html {
-        overflow: visible;
-    }
-*/
-
-    #checkbox_menu:checked + .menu_toogle label span:nth-child(1) {
-        opacity: 0;
-    }
-
     #checkbox_menu:checked + .menu_toogle {
         height: 80px;
         width: 40px;
         margin-top: 3vh;
         margin-right: 3vw;
+        position: fixed;
+        z-index: 12;
+    }
+
+    #checkbox_menu:checked + .menu_toogle label span:nth-child(1) {
+        opacity: 0;
     }
 
     #checkbox_menu:checked + .menu_toogle label span:nth-child(2) {
@@ -421,100 +438,109 @@ p.comments_number a:hover {
         height: 100vh;
         background-color: #000000c7;
         transition: 0.25s ease-in-out;
-        z-index: 9;
+        z-index: 11;
     }
 
     #checkbox_menu:checked ~ .menu nav.navmenu {
         transform: translateX(767px);
-    }
-
-    .menu_section nav.navmenu {
+        position: fixed;
         display:block;
     }
 
-    .menu_section .menu_toogle {
-        position: absolute;
-        right: 0;
-        top: 15px;
-    }
-
-    #checkbox_menu:checked + .menu_section .menu_toogle .one{ 
-        opacity: 0;
-    }
-
-    .menu_section .menu_toogle .two {
-        transform: rotate(-45deg);
-    }
-
-    .menu_section .menu_toogle .three {
-        transform: rotate(45deg);
-        margin-top: -10px;
-    }
 }
 
 @media (max-width:556px) {
+
     .hr1 {
         width: 224px;
     }
+    
+    /* Menu dos posts */
+
     aside {
-        display: none;
+    display: none;
     }
 
-    /* ASIDE_MENU */    
-
-    .menu_aside {       
+    .menu_aside {    
+    margin-top: 15px;   
     width: 100px;
     height: 100px;
     display: inline-block;
-    float: right;
-    }
-    
-    .checkbox_aside {
-    display: inline-block;
-    width: inherit;
-    height: inherit;
     }
     
     #checkbox_aside{
-    opacity: 100;
+    opacity: 0;
     cursor: pointer;
     position: absolute;
     width: 20px;
     height: 20px;
+    top: auto;
     }
     
-    label span.checkbox_aside {
-        color: #EDEDED;
-        background-color: #ccab7900;
-        margin-top: 140px;
+    label {
         opacity: 100;
+
+        color: #EDEDED;
+        font-size: 1em;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    label:hover {
+        color: rgb(204, 171, 121);
+    }
+
+    .menu_aside label::after {
+        content: '+';
+        transition: transform .3s ease;
+        position: fixed;
+        margin-top: 0px;
+
+        font-size: large;
     }
 
     nav.aside_opened {
-        padding-top: 16.6vh;
         position: absolute;
-        top:0;
-        left: -556px;
-        width: 100vw;
-        height: 100vh;
+        top:28vh;
+        width: 70vw;
+        height: 20vh;
+        z-index: 9;
+
         background-color: #000000c7;
+
         transition: 0.25s ease-in-out;
     }
     
     nav.aside_opened ul li a{
         text-decoration: none;
         color: #EDEDED;
+        font-weight: 600;
     }
 
-    /* -- :checked não funciona --*/
-    #checknox_aside:checked ~ .menu_opened nav.aside_opened{
-        transform: translateX(556px); 
+    nav.aside_opened ul li a:hover {
+        background-color: rgb(204, 171, 121);
+        color: #fdfdfd;
+    }
+    
+    #checkbox_aside:checked + .menu_opened nav.aside_opened {
+        display: block;
+        position: fixed;
+    }
+
+    #checkbox_aside:checked + .menu_opened label::after {
+        transform: rotate(45deg);
+        float: right;
+        top: 25.5vh;
+        right: 15.5vw;
+        font-size: 3em;
+        z-index: 10;
     }
 }
 
+
 @media (max-width:424px) {
     p.footer {
-        margin-top: 5.5vh;
+        margin-top: 5vh;
         font-size: 12px;
     }
 }
