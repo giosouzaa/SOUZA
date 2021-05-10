@@ -417,6 +417,9 @@ img.instagram {
         margin-left: 15vh;
         grid-area: foto;
     }
+    p.footer {
+        margin-top: 5vh;
+    }
 }
 
 @media (max-width: 425px) {
