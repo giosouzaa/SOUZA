@@ -501,7 +501,7 @@ p.comments_number a:hover {
 
     nav.aside_opened {
         position: absolute;
-        top:28vh;
+        top:27vh;
         width: 70vw;
         height: 20vh;
         z-index: 9;
@@ -528,11 +528,10 @@ p.comments_number a:hover {
     }
 
     #checkbox_aside:checked + .menu_opened label::after {
-        transform: rotate(45deg);
+        transform: rotate(45deg) scale(3);
         float: right;
-        top: 25.5vh;
-        right: 15.5vw;
-        font-size: 3em;
+        top: 28.5vh;
+        right: 14.5vw;
         z-index: 10;
     }
 }
