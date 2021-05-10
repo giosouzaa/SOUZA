@@ -411,6 +411,14 @@ img.instagram {
     }
 }
 
+@media (max-width: 480px) {
+    img.giovanna_perfil {
+        margin-top: -50vh;
+        margin-left: 15vh;
+        grid-area: foto;
+    }
+}
+
 @media (max-width: 425px) {
     img.giovanna_perfil {
         margin-top: -50vh;
