@@ -1,4 +1,4 @@
-/*Menu responsivo*/
+/* Modelo de menu responsivo - EM NAO FUNCIONAMENTO */
 
 let show = true;
 
