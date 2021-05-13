@@ -461,11 +461,10 @@ p.comments_number a:hover {
     display: none;
     }
 
-    .menu_aside {    
-    margin-top: 15px;   
+    .menu_aside {      
     width: 100px;
     height: 100px;
-    display: inline-block;
+    display: inline;
     }
     
     #checkbox_aside{
@@ -491,12 +490,8 @@ p.comments_number a:hover {
     }
 
     .menu_aside label::after {
-        content: '+';
+        content: ' +';
         transition: transform .3s ease;
-        position: fixed;
-        margin-top: 0px;
-
-        font-size: large;
     }
 
     nav.aside_opened {
@@ -528,10 +523,11 @@ p.comments_number a:hover {
     }
 
     #checkbox_aside:checked + .menu_opened label::after {
+        position: fixed;
         transform: rotate(45deg) scale(3);
         float: right;
         top: 28.5vh;
-        right: 14.5vw;
+        right: 17.5vw;
         z-index: 10;
     }
 }
