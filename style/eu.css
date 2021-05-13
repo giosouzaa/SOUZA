@@ -432,6 +432,16 @@ img.instagram {
         margin-top: 5vh;
         font-size: 12px;
     }
+
+    .menu_toogle {
+        margin-top: 20vh;
+    }
+
+    p.footer {
+        margin-top: 3.8vh;
+        margin-left: 23vw ;
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 381px) {
