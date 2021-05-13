@@ -314,9 +314,10 @@ p.comments_number a:hover {
     display: inline-block;
     width: inherit;
     height: inherit;
+    position: absolute;
 }
 
-#checkbox_love:checked + love-reaction {
+#checkbox_love:checked + .love-reaction {
     transition: background .8s steps(28);
     background-position: -2800px 0;
 }
