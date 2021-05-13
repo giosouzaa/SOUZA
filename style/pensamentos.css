@@ -534,7 +534,13 @@ p.comments_number a:hover {
     }
 }
 
-@media (max-width:424px) {
+@media (max-width:425px) {
+    p.footer {
+        margin-top: 3.8vh;
+        margin-left: 23vw ;
+        font-size: 12px;
+    }
+
     p.footer {
         margin-top: 5vh;
         font-size: 12px;
@@ -544,10 +550,14 @@ p.comments_number a:hover {
         margin-top: 20vh;
     }
 
-    p.footer {
-        margin-top: 3.8vh;
-        margin-left: 23vw ;
-        font-size: 12px;
+    .menu_aside {
+        display: inline-block;
+        margin-top: 7vh;
+    }
+
+    .menu_aside label::after {
+        content: ' +';
+        position: absolute;
     }
 }
 
