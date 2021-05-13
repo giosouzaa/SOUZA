@@ -310,18 +310,18 @@ p.comments_number a:hover {
 }
 
 .love-reaction {
-    background: url(http://i.imgur.com/zw8ahUb.png) no-repeat 0 0;
+    background: url('style/like.png') no-repeat 0 0;
     display: inline-block;
     width: inherit;
     height: inherit;
 }
 
-[type="checkbox"]:checked + love-reaction {
+#checkbox_love:checked + love-reaction {
     transition: background .8s steps(28);
     background-position: -2800px 0;
 }
 
-[type="checkbox"] {
+#checkbox_love {
     opacity: 0;
     cursor: pointer;
     position: absolute;
