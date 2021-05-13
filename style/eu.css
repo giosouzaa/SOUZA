@@ -445,6 +445,19 @@ img.instagram {
     }
 }
 
+@media (max-width:360px) {
+
+    .menu_toogle {
+        margin-top: 20vh;
+    }
+
+    p.footer {
+        margin-top: 3.8vh;
+        margin-left: 23vw ;
+        font-size: 12px;
+    }
+}
+
 @media (max-width: 331px) {
     img.giovanna_perfil {
         margin-top: -8vh;
